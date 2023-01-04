@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 import random
-number = random.randint(-10, 10)
+number = random.randint(-10000, 10000)
 
 if number < 0:
-    number *= -1
-    number % 10
+    number = number * -1
+    number =num % 10
+    number = num * -1
 else:
     number = number % 100
-    print("Last digit of {} is ".format(number), end="")
+    print("Last digit of {} is ".format(number), end='')
     if number > 5:
         print("{} and is greater than 5".format(number))
     elif number == 0:
