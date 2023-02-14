@@ -40,6 +40,7 @@ class Square():
     def size(self):
         """Get or set the size of the square."""
         return self.__size
+
     @size.setter
     def size(self, value):
         if type(value) is int:
@@ -73,7 +74,7 @@ class Square():
             for y in range(self.__position[1]):
                 print()
             for x in range(self.__size):
-                    print(' ' * self.__position[0], end='')
-                    print('#' * self.__size)
+                print(' ' * self.__position[0], end='')
+                print('#' * self.__size)
         else:
             print()

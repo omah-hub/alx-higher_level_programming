@@ -14,13 +14,14 @@ class Square():
 
     def __init__(self, size=0, position=(0, 0)):
         """Sets the necessary attributes for the Square object.
-   
+
         Args:
             size (int): the size of one edge of the square.
             position (tuple): the coordinates of the square.
         """
         self.size = size
         self.position = position
+
     @property
     def size(self):
         """Get or set the size of the square."""

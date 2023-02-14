@@ -24,7 +24,7 @@ class Node():
     def data(self):
         """Get or set the data value of a node."""
         return self.__data
-    
+
     @data.setter
     def data(self, value):
         if type(value) is int:
@@ -36,7 +36,7 @@ class Node():
     def next_node(self):
         """Get or set the next node of the current node."""
         return self.__next_node
-    
+
     @next_node.setter
     def next_node(self, value):
         if type(value) is Node or value is None:
