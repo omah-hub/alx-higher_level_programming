@@ -29,7 +29,7 @@ class Rectangle:
     def height(self):
         """getter for the private instance attribute height"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """setter for the private instance attribute height"""
@@ -54,5 +54,5 @@ class Rectangle:
         string = ""
         if self.__width != 0 and self.__height != 0:
             string += "\n".join("#" * self.__width
-                    for j in range(self.__height))
+                                for j in range(self.__height))
         return string
