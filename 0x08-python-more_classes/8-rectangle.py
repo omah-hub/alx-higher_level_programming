@@ -47,7 +47,6 @@ class Rectangle:
         self.__width = value
 
     @property
-
     def height(self):
         """getter for the private instance attribute height"""
         return self.__height
@@ -62,8 +61,8 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-            """returns the area of the rectangle"""
-            return self.__width * self.__height
+        """returns the area of the rectangle"""
+        return self.__width * self.__height
 
     def perimeter(self):
         """returns the perimeter of the rectangle"""
@@ -78,6 +77,7 @@ class Rectangle:
             string += "\n".join(str(self.print_symbol) * self.__width
                                 for j in range(self.__height))
             return string
+    
     def __repr__(self):
         """returns a string representation of the rectangle for reproduction"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
