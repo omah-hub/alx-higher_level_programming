@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Takes in a URL and an email, sends POST request to the passed URL
     with the email as parameter, and displays the body of the response
-    """
+"""
 import requests
 import sys
 
